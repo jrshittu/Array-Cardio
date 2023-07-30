@@ -104,10 +104,10 @@ Create a list of names that contain 'John' anywhere in the name.
 ### Code (commented out):
 ```javascript
 // Challenge: Create a list of names that contain 'John' anywhere in the name.
-// const names = ['John Smith', 'David Johnson', 'Mary Johnson', 'Andrew Johnston', 'Steven Thompson'];
+const names = ['John Smith', 'David Johnson', 'Mary Johnson', 'Andrew Johnston', 'Steven Thompson'];
 
-// const filteredNames = names.filter(name => name.includes('John'));
-// console.log(filteredNames);
+const filteredNames = names.filter(name => name.includes('John'));
+console.log(filteredNames);
 ```
 
 ### Solution:
