@@ -33,19 +33,14 @@
       { title: 'You Don\'t Know JS', author: 'Kyle Simpson', year: 2014 },
       { title: 'JavaScript: The Definitive Guide', author: 'David Flanagan', year: 2020 },
     ];
-    const sortedBooks = books.sort((a, b) => {
-      if (a.author !== b.author) {
-        return a.author.localeCompare(b.author);
-      } else {
-        return b.year - a.year;
-      }
-    });
+    
+    const sortedBooks = books.sort((a, b) => { (a.author !== b.author) ? a.author.localeCompare(b.author) : b.year - a.year});
     console.log('Exercise 5:', sortedBooks);
 
     // Exercise 6: Challenge (commented out)
-    // const cities = ['New York', 'Los Angeles', 'San Francisco', 'Chicago', 'New Orleans'];
-    // const filteredCities = cities.filter(city => city.includes('New'));
-    // console.log('Exercise 6:', filteredCities);
+    const cities = ['New York', 'Los Angeles', 'San Francisco', 'Chicago', 'New Orleans'];
+    const filteredCities = cities.filter(city => city.includes('New'));
+    console.log('Exercise 6:', filteredCities);
 
     // Exercise 7: Sorting People
     const people = [
