@@ -101,7 +101,7 @@ console.log(sortedProducts);
 ### Objective:
 Create a list of names that contain 'John' anywhere in the name.
 
-### Code (commented out):
+### Code
 ```javascript
 // Challenge: Create a list of names that contain 'John' anywhere in the name.
 const names = ['John Smith', 'David Johnson', 'Mary Johnson', 'Andrew Johnston', 'Steven Thompson'];
