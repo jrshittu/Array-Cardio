@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array Exercises 💪</title>
+</head>
+<body>
+  <script>
+    // Exercise 1: Array.prototype.filter()
+    const words = ['apple', 'banana', 'grape', 'orange', 'kiwi', 'pear', 'strawberry'];
+    const longWords = words.filter(word => word.length > 5);
+    console.log('Exercise 1:', longWords);
+
+    // Exercise 2: Array.prototype.map()
+    const fruits = ['apple', 'banana', 'orange', 'kiwi'];
+    const uppercaseFruits = fruits.map(fruit => fruit.toUpperCase());
+    console.log('Exercise 2:', uppercaseFruits);
+
+    // Exercise 3: Array.prototype.sort()
+    const numbers = [5, 10, 2, 8, 1, 6];
+    const sortedNumbers = numbers.sort((a, b) => b - a);
+    console.log('Exercise 3:', sortedNumbers);
+
+    // Exercise 4: Array.prototype.reduce()
+    const numbers2 = [2, 3, 4, 5];
+    const product = numbers2.reduce((total, number) => total * number, 1);
+    console.log('Exercise 4:', product);
+
+    // Exercise 5: Additional Sorting
+    const books = [
+      { title: 'JavaScript: The Good Parts', author: 'Douglas Crockford', year: 2008 },
+      { title: 'Eloquent JavaScript', author: 'Marijn Haverbeke', year: 2011 },
+      { title: 'You Don\'t Know JS', author: 'Kyle Simpson', year: 2014 },
+      { title: 'JavaScript: The Definitive Guide', author: 'David Flanagan', year: 2020 },
+    ];
+    const sortedBooks = books.sort((a, b) => {
+      if (a.author !== b.author) {
+        return a.author.localeCompare(b.author);
+      } else {
+        return b.year - a.year;
+      }
+    });
+    console.log('Exercise 5:', sortedBooks);
+
+    // Exercise 6: Challenge (commented out)
+    // const cities = ['New York', 'Los Angeles', 'San Francisco', 'Chicago', 'New Orleans'];
+    // const filteredCities = cities.filter(city => city.includes('New'));
+    // console.log('Exercise 6:', filteredCities);
+
+    // Exercise 7: Sorting People
+    const people = [
+      { name: 'Alice', age: 25 },
+      { name: 'Bob', age: 40 },
+      { name: 'Eve', age: 22 },
+      { name: 'John', age: 30 },
+    ];
+    const sortedPeople = people.sort((a, b) => b.age - a.age);
+    console.log('Exercise 7:', sortedPeople);
+
+    // Exercise 8: Reducing Data
+    const sentence = 'The quick brown fox jumps over the lazy dog';
+    const charCount = sentence.toLowerCase().split('').reduce((obj, char) => {
+      if (/[a-z]/.test(char)) {
+        if (!obj[char]) {
+          obj[char] = 0;
+        }
+        obj[char]++;
+      }
+      return obj;
+    }, {});
+    console.log('Exercise 8:', charCount);
+  </script>
+</body>
+</html>
